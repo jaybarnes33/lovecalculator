@@ -2,13 +2,13 @@ function checkloveper(){
 
  var name = document.getElementById('name').value;
  var lname = document.getElementById('lovename').value;
-
- if(name == ""){
-  alert('Please enter your name');
- }else if(name== "Tonic" || name=="Sampson")
+if(name== "Tonic" || name=="Sampson")
  {var lovdata = 100;
  lovdata = Math.floor(lovdata);
  document.getElementById('lovevalue').value = lovdata + "%";
+ }
+ else if(name == ""){
+  alert('Please enter your name');
  }
  else if (name.length <=2 ) {
   alert('Minimum name length is 3')
