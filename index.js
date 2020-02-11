@@ -5,7 +5,12 @@ function checkloveper(){
 
  if(name == ""){
   alert('Please enter your name');
- }else if (name.length <=2 ) {
+ }else if(name== "Tonic" || name=="Sampson")
+ {var lovdata = 100;
+ lovdata = Math.floor(lovdata);
+ document.getElementById('lovevalue').value = lovdata + "%";
+ }
+ else if (name.length <=2 ) {
   alert('Minimum name length is 3')
  }else if(!isNaN(name)){
   alert('Numbers are not allowed');
